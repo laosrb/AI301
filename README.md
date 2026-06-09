@@ -1,7 +1,8 @@
 # AI301
 CodePath's AI Open Source Capstone Summer 2026
 
-# Contribution [#]: [Issue Title]
+# Contribution [#]: [jenkins: Action Examples #3900]
+https://github.com/backstage/community-plugins/issues/3900
 
 - **Contribution Number:** [1 / 2 / 3]  
 - **Student:** Ryan Bouapheng
@@ -22,20 +23,23 @@ I choose this issue because I have worked with TypeScript and Jenkins CI/CD. My 
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The Backstage Jenkins plugin is missing built-in template examples for its Scaffolder actions. Because these examples are absent, developers cannot see how to use or format the Jenkins actions in the developer portal's documentation.
 
 ### Expected Behavior
 
-[What should happen?]
+The plugin should include an examples file defining the YAML structure for its actions (e.g., passing job names or build arguments) so they automatically render on the /scaffolder/actions web page.
 
 ### Current Behavior
 
-[What actually happens?]
+The actions are registered, but they lack an examples property. The "Installed Actions" UI shows the action definitions but leaves the examples section empty, making self-service difficult.
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+The changes impact the Jenkins workspace within the backstage/community-plugins repository:
 
+New File: An examples file (e.g., *.examples.ts) containing mock template setups using TemplateExample[].
+
+Modifications: The existing action registration code where the new examples array needs to be imported and added to the action definition.
 ---
 
 ## Reproduction Process
