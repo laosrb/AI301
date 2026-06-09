@@ -14,7 +14,6 @@ https://github.com/backstage/community-plugins/issues/3900
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
 I choose this issue because I have worked with TypeScript and Jenkins CI/CD. My goal is to become a better proficient coder in TypeScript, I hope to learn how to enjoy coding more.
 
 ---
